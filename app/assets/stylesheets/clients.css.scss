@@ -1,3 +1,36 @@
 // Place all the styles related to the clients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$mild_blue: #77f;
+
+article.client_small{
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	line-height: 170%;
+	
+	p.address{
+		width: 15em;
+		font-weight: normal;
+		margin-bottom: 7px;
+		margin-top: 7px;
+	}
+	
+	a{ color: $mild_blue; }
+	
+	a:hover{
+		color: $mild_blue;
+		background: none;
+	}
+	
+	h2{
+		font-size: 14pt;
+		margin-bottom: 7px;
+	}
+	
+	hr{ margin-top: 5px; } 
+	
+	
+}

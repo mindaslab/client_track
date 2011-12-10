@@ -1,33 +1,22 @@
 <p id="notice"><%= notice %></p>
+<article class="client">
+	<h1><%= @client.name %></h1>
+	<label>Ph:</label><%= @client.ph %><br />
+	<label>Email:</label><%= @client.email %><br />
+	<p>
+	   <label>Address:</label><br />
+	  <%= @client.address %>
+	</p>
 
-<p>
-  <b>Name:</b>
-  <%= @client.name %>
-</p>
-
-<p>
-  <b>Ph:</b>
-  <%= @client.ph %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @client.email %>
-</p>
-
-<p>
-  <b>Address:</b>
-  <%= @client.address %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @client.description %>
-</p>
+	<p>
+	  <label>Description:</label><br />
+	  <%= @client.description %>
+	</p>
 
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %> <br />
+	<%= link_to 'Edit', edit_client_path(@client) %> |
+	<%= link_to 'Back', clients_path %> <br />
+</article>
 
 <h2>Notes</h2>
 
