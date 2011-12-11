@@ -5,3 +5,7 @@
  *= require_self
  *= require_tree . 
 */
+
+#global_search{
+	float: right;
+}

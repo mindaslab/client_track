@@ -80,8 +80,10 @@ div.stuff{
     margin-top: 5px;
     width:100%;
     border-bottom: 1px solid $mild_blue;
+    min-height: 35px;
     
     ul{
+		float: left;
 	  li{
 	    display: inline;
 	    margin-right: 5px;
@@ -92,5 +94,9 @@ div.stuff{
   h1{
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	
+	div.yield{
+		clear: both;
 	}
 }
