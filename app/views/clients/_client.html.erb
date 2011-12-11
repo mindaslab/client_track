@@ -1,0 +1,13 @@
+<article class="client_small">
+	<h2><%= link_to client.name, client %></h2>
+    <label>Ph: </label><%= client.ph %><br />
+    <label><label>Mail: </label><%= mail_to client.email %><br />
+    <p class="address">
+		<label>Address</label> <br/>
+		<%= client.address %>
+	</p>
+    <%= link_to 'Show', client %> &nbsp;
+    <%= link_to 'Edit', edit_client_path(client) %> &nbsp;
+    <%= link_to 'Destroy', client, confirm: 'Are you sure to permanetly destroy this client record(s)?', method: :delete %>
+    <hr />
+</article>
