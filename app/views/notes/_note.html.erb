@@ -1,4 +1,8 @@
 <article class="note">
 	<p><%= note.content %></p>
-	<span class="more">Updated:<%= note.updated_at %> Created:<%= note.created_at %></span>
+	<p class="more">
+		Updated:<%= note.updated_at %> &nbsp;
+		Created:<%= note.created_at %> &nbsp;
+		<%= link_to 'Delete', [note.client, note], :confirm => 'Are you sure?', :method => :delete %>
+	</p>
 </article> 

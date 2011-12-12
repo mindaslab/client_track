@@ -1,3 +1,26 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+article.note{
+	position: relative;
+	background: #DCDFFF;
+	margin-top: 22px;
+	margin-bottom: 7px;
+	padding: 15px;
+	
+	border-bottom: 1px black dotted;
+	p{
+		font-size: 12pt;
+	}
+	
+	p.more{
+		font-size: 10pt;
+		color: #737373;
+		margin-top: 10px;
+	}
+}
+
+article.note:hover{
+	background: none;
+}

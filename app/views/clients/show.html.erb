@@ -1,22 +1,6 @@
 <p id="notice"><%= notice %></p>
-<article class="client">
-	<h1><%= @client.name %></h1>
-	<label>Ph:</label><%= @client.ph %><br />
-	<label>Email:</label><%= @client.email %><br />
-	<p>
-	   <label>Address:</label><br />
-	  <%= @client.address %>
-	</p>
 
-	<p>
-	  <label>Description:</label><br />
-	  <%= @client.description %>
-	</p>
-
-
-	<%= link_to 'Edit', edit_client_path(@client) %> |
-	<%= link_to 'Back', clients_path %> <br />
-</article>
+<%= render @client %>
 
 <h2>Notes</h2>
 
