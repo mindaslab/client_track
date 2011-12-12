@@ -13,9 +13,21 @@ class NotesController < ApplicationController
   end
   
   def update
-  
+	@client = Client.find(params[:client_id])
+    @note = @client.notes.find(params[:id])
+    respond_to do |format|
+      if @note.update_attributes(params[:note])
+        format.html { redirect_to @client, notice: 'Note was successfully updated.' }
+        format.json { head :ok }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @client.errors, status: :unprocessable_entity }
+      end
+    end
   end
   
   def edit
+	@client = Client.find(params[:client_id])
+    @note = @client.notes.find(params[:id])
   end
 end

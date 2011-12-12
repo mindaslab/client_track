@@ -2,9 +2,9 @@
 
 <%= render @client %>
 
-<h2>Notes</h2>
+<h1>Edit Note</h1>
 
-<%= form_for([@client, @client.notes.build]) do |f| %>
+<%= form_for([@client, @note]) do |f| %>
   <div class="field">
     <%= f.label :content, "Create Note" %><br />
     <%= f.text_area :content, :rows=> 10, :cols=>60 %>
@@ -13,8 +13,3 @@
     <%= f.submit %>
   </div>
 <% end %>
-
-<%= render @notes %>
-
-<%= will_paginate @notes %>
-

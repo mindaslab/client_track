@@ -1,6 +1,9 @@
 ClientTrack::Application.routes.draw do
   resources :clients do
-    resources :notes
+	collection do
+		get 'search'
+	end
+	resources :notes
   end
   
   get 'home/search'

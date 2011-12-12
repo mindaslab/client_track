@@ -15,7 +15,7 @@
 				<li><%= link_to "New Client", new_client_path %></li>
 			</ul>
 			
-			<%= form_tag({:action=>:search, :controller=>:home}, :method=>:get, :id=>"global_search") do %>
+			<%= form_tag({:action=>:search, :controller=>:clients}, :method=>:get, :id=>"global_search") do %>
 				<%= text_field_tag :s %> <%= submit_tag "Search" %>
 			<% end %>
 		</nav>

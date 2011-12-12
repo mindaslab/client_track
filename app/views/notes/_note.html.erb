@@ -1,8 +1,11 @@
+<% if note.id %>
 <article class="note">
 	<p><%= note.content %></p>
 	<p class="more">
 		Updated:<%= note.updated_at %> &nbsp;
 		Created:<%= note.created_at %> &nbsp;
+		<%= link_to 'Edit', edit_client_note_path(note.client, note) %> &nbsp;
 		<%= link_to 'Delete', [note.client, note], :confirm => 'Are you sure?', :method => :delete %>
 	</p>
 </article> 
+<% end %>

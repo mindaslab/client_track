@@ -15,6 +15,7 @@ class ClientsController < ApplicationController
   # GET /clients/1.json
   def show
     @client = Client.find(params[:id])
+    @notes = @client.notes.paginate(:page => params[:page], :per_page => 20)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -80,5 +81,10 @@ class ClientsController < ApplicationController
       format.html { redirect_to clients_url }
       format.json { head :ok }
     end
+  end
+  
+  def search
+	@search = params[:s]
+	@clients = Client.search(params[:s]).paginate(:page => params[:page], :per_page => 20)
   end
 end
