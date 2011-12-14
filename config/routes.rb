@@ -2,6 +2,7 @@ ClientTrack::Application.routes.draw do
   resources :clients do
 	collection do
 		get 'search'
+		get 'search_notes'
 	end
 	resources :notes
   end

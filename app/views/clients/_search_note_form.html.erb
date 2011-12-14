@@ -1,0 +1,5 @@
+<%= form_tag({:action=>:search_notes}, :method=>:get) do %>
+	<%= text_field_tag :s %>
+	<%= hidden_field_tag :client_id, @client.id %>
+	<%= submit_tag "Search Notes" %>
+<% end %>

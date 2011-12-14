@@ -87,4 +87,9 @@ class ClientsController < ApplicationController
 	@search = params[:s]
 	@clients = Client.search(params[:s]).paginate(:page => params[:page], :per_page => 20)
   end
+  
+  def search_notes
+	@client = Client.find params[:client_id]
+	@notes =  Note.search(params[:s], [:content], {:client_id => @client}).paginate(:page => params[:page], :per_page => 20)
+  end
 end
