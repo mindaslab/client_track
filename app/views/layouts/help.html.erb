@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ERP Solutions</title>
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/global.css" type="text/css" media="screen" />
+
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					window.location.hash = '#' + current;
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		
+			<header>
+				<h1><a href="#">Client Track</a></h1>
+			</header>
+			<nav>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>	
+	
+		<section id="page">
+			<section id="content">
+				<div id="container">
+		<div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<h1>Track Your Client</h1>
+						<img src="/img/yin_yang.png" />
+						<p>Track your clients, identify who likes what. Who is good,
+						bad and the ugly. Serve them accordingly. Build a profile of
+						them..</p>
+					</div>
+					<div class="slide">
+						<h1>Create Client Database</h1>
+						<img src="/img/database.png" /> 
+						<p>Create a database of your clients. Search for them any
+						time any where and know about their profiles. All data
+						will be at your finger tips.</p>
+					</div>
+					<div class="slide">
+						<h1>Note Client Activity</h1>
+						<img src="/img/note.png" />
+						<p>Note down your client tastes and requests. Search them
+						and get the right information about your client at the
+						right time.</p>
+					</div>
+					<div class="slide">
+						<h1>Powerful Search</h1>
+						<img src="/img/magnifying_glass.png" />
+						<p>Tap our powerful search to search about almost anything
+						about your client and get results in seconds.</p>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="/img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="/img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+				<img src="/img/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
+			</div>
+		</div>
+			</section>
+		</section>
+		<footer>
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+					<aside class="footer-segment">
+								<ul>
+									<li><img src="/img/camel.png" /></li>
+								</ul>
+					</aside>
+
+					<aside class="footer-segment">
+							<h4>Awesome Stuff</h4>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+								</ul>
+					</aside>
+
+					<aside class="footer-segment">
+							<h4>Coolness</h4>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+								</ul>
+					</aside>
+					
+					<aside class="footer-segment">
+							<h4>Blahdyblah</h4>
+								<p>&copy; 2010 <a href="#">yoursite.com</a> Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+					</aside>
+
+			</section>
+
+		</section>
+		</footer>
+	</div>
+</body>
+
+</html>

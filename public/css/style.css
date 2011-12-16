@@ -1,0 +1,172 @@
+/* reset */
+* {
+margin: 0;
+padding: 0;
+}
+html {
+width:100%;
+}
+/* render html5 elements as block */
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+min-width:1000px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height: 18px;
+color:#434343;
+background:#efefef url(../img/background.png) repeat top center;
+}
+	
+
+#wrapper {
+width: 100%;
+min-width:1000px;
+margin: 0 auto;
+margin-top: 5px;
+margin-bottom: 5px;
+-webkit-box-shadow: 3px 3px 7px #777;
+-moz-box-shadow: 3px 3px 7px #777;
+background: #FFFFFF;
+}
+
+nav {
+width: 100%;
+height: 50px;
+margin: 0 auto;
+background: #efefef;
+}
+
+header {
+width: 100%;
+height: 50px;
+margin: 0 auto;
+background: #efefef;
+}
+#content {
+width: 100%;
+margin: 10px auto;
+clear: both;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#page {
+width: 100%;
+margin: 10px auto;
+clear: both;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+/* nav */
+
+nav .menu {
+font-size: 16px;
+font-weight: bold;
+float: right;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 1px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+}
+
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 15px;
+text-decoration: none;
+color: #000;
+}
+
+nav .menu a:hover {
+text-decoration: underline;
+}
+
+/** HEADER */
+
+header h1 {
+margin: 0;
+padding: 0 0 0 30px;
+line-height: normal;
+}
+
+header h1 { 	
+float: left;
+padding-top: 20px; 
+}
+
+header h1 a:link, header h1 a:visited {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 60px;
+text-decoration: none;
+}
+
+header h1 a:hover { 
+text-decoration: underline; 
+color: #000;
+}
+
+
+
+
+footer {
+width: 100%;
+margin: 0 auto;
+clear: both;
+min-width: 1000px;
+}
+
+aside h3 {
+font-size: 18px;
+}
+
+aside ul {
+list-style: none;
+margin-bottom: 20px;
+margin-top: 15px;
+}
+
+#footer-area {
+background: #efefef;
+min-width:1000px;
+color: #000;
+font-size: 90%;
+padding: 18px 0;
+overflow: hidden;
+}
+
+.footer-segment {
+float: left;
+margin-right: 20px;
+margin-left: 20px;
+width: 250px;
+}
+.footer-segment_last {
+float: right;
+margin-right: 200px;
+width: 250px;
+}
+footer aside h4 {
+color: #000;
+font-size: 16px;
+line-height: 1.5em;
+}
+
+footer a:hover {
+color: #000;
+}
+
+footer p {
+margin-top: 15px;
+}

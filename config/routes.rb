@@ -7,7 +7,7 @@ ClientTrack::Application.routes.draw do
 	resources :notes
   end
   
-  get 'home/search'
+  get 'help/index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
